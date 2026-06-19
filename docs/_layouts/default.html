@@ -11,6 +11,22 @@
     <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}" />
   </head>
   <body class="{{ page.body_class | default: 'page-card' }}">
+    <header class="site-header">
+      <div class="wrap site-header-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">OA</span>
+          <span class="brand-text">
+            <strong>Oleksandr Andreiev</strong>
+            <small>Publisher Website</small>
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="index.html"{% if page.nav == 'home' %} aria-current="page"{% endif %}>Home</a>
+          <a href="about.html"{% if page.nav == 'about' %} aria-current="page"{% endif %}>About</a>
+          <a href="privacy-book-reader.html"{% if page.nav == 'privacy' %} aria-current="page"{% endif %}>Privacy Policy</a>
+        </nav>
+      </div>
+    </header>
     {{ content }}
   </body>
 </html>
