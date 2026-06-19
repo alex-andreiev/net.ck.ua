@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About / Contact</title>
+    <style>
+      :root {
+        --bg: #f6f2ea;
+        --surface: #fffdf8;
+        --text: #201a16;
+        --muted: #63584f;
+        --line: rgba(32, 26, 22, 0.12);
+        --accent: #9d4d33;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        color: var(--text);
+        background: linear-gradient(180deg, #efe5d3 0%, var(--bg) 38%, #f8f4ed 100%);
+      }
+      .wrap { width: min(860px, calc(100% - 32px)); margin: 0 auto; padding: 32px 0 56px; }
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        padding: 32px;
+        box-shadow: 0 18px 48px rgba(56, 39, 27, 0.08);
+      }
+      .lang { display: flex; justify-content: flex-end; gap: 8px; margin-bottom: 24px; }
+      .lang a, .lang span {
+        padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(32, 26, 22, 0.12);
+        text-decoration: none; font-size: 14px; color: var(--text); background: rgba(255,255,255,0.45);
+      }
+      .lang span { background: rgba(157, 77, 51, 0.12); }
+      h1, h2 { margin: 0 0 16px; }
+      p, li { line-height: 1.7; color: var(--muted); }
+      ul { padding-left: 18px; }
+      a { color: var(--accent); }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <article class="card">
+        <div class="lang">
+          <span>EN</span>
+          <a href="about-ua.html" lang="uk" hreflang="uk">Українська</a>
+        </div>
+        <h1>About / Contact</h1>
+        <p>
+          This website represents the app publishing activity of Oleksandr Andreiev.
+        </p>
+        <h2>Publisher</h2>
+        <ul>
+          <li>Public name: Oleksandr Andreiev</li>
+          <li>Legal entity: FOP ANDRIEIEV OLEKSANDR SERHIIOVYCH</li>
+          <li>Country: Ukraine</li>
+          <li>Email: <a href="mailto:andreyev0204@gmail.com">andreyev0204@gmail.com</a></li>
+          <li>Domain: <a href="https://net.ck.ua">net.ck.ua</a></li>
+        </ul>
+        <h2>Support</h2>
+        <p>
+          For product questions, publication inquiries, or privacy-related requests, use the email above.
+        </p>
+        <p>
+          Return to the <a href="index.html">main page</a>.
+        </p>
+      </article>
+    </main>
+  </body>
+</html>

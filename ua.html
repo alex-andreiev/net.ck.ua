@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Олександр Андреєв | Сайт видавця</title>
+    <meta
+      name="description"
+      content="Офіційний сайт видавця мобільних застосунків ФОП АНДРЕЄВ ОЛЕКСАНДР СЕРГІЙОВИЧ. Інформація про бізнес, застосунки, контакти та політики конфіденційності."
+    />
+    <style>
+      :root {
+        --bg: #f4f0e8;
+        --surface: rgba(255, 252, 247, 0.88);
+        --text: #1e1a17;
+        --muted: #655b53;
+        --line: rgba(30, 26, 23, 0.12);
+        --accent: #a0462d;
+        --accent-strong: #7c2f1a;
+        --shadow: 0 24px 60px rgba(74, 48, 31, 0.15);
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top left, rgba(160, 70, 45, 0.12), transparent 34%),
+          linear-gradient(180deg, #efe5d3 0%, var(--bg) 42%, #efe9de 100%);
+      }
+      .wrap { width: min(1040px, calc(100% - 32px)); margin: 0 auto; }
+      .hero { padding: 40px 0 28px; }
+      .hero-card, .section-card {
+        background: var(--surface);
+        backdrop-filter: blur(12px);
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        box-shadow: var(--shadow);
+      }
+      .hero-card { padding: 40px; position: relative; overflow: hidden; }
+      .hero-card::after {
+        content: "";
+        position: absolute;
+        inset: auto -120px -120px auto;
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(160, 70, 45, 0.22), transparent 70%);
+      }
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        align-items: center;
+        margin-bottom: 18px;
+      }
+      .eyebrow {
+        display: inline-block;
+        margin: 0;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: rgba(160, 70, 45, 0.1);
+        color: var(--accent-strong);
+        font-size: 14px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+      .lang { display: inline-flex; gap: 8px; align-items: center; }
+      .lang a, .lang span {
+        padding: 8px 12px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        text-decoration: none;
+        font-size: 14px;
+        color: var(--text);
+        background: rgba(255, 255, 255, 0.45);
+      }
+      .lang span { background: rgba(160, 70, 45, 0.12); color: var(--accent-strong); }
+      h1, h2 { margin: 0; font-weight: 700; }
+      h1 { max-width: 780px; font-size: clamp(36px, 6vw, 72px); line-height: 0.95; }
+      .lead {
+        max-width: 780px;
+        margin: 20px 0 0;
+        font-size: 20px;
+        line-height: 1.6;
+        color: var(--muted);
+      }
+      .actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 32px; }
+      .button, .button-secondary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 48px;
+        padding: 0 20px;
+        border-radius: 999px;
+        text-decoration: none;
+        font-weight: 700;
+      }
+      .button { color: #fff8f1; background: var(--accent); }
+      .button-secondary {
+        color: var(--text);
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.45);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+        margin: 24px 0 48px;
+      }
+      .section-card { padding: 28px; }
+      .section-card p, .section-card li { color: var(--muted); line-height: 1.7; }
+      ul { margin: 16px 0 0; padding-left: 18px; }
+      .single { margin-bottom: 20px; }
+      .footer { padding: 8px 0 56px; color: var(--muted); font-size: 14px; }
+      .footer a, .section-card a { color: inherit; }
+      @media (max-width: 760px) {
+        .hero { padding-top: 24px; }
+        .hero-card, .section-card { border-radius: 22px; }
+        .hero-card { padding: 28px 22px; }
+        .topbar { flex-direction: column; align-items: flex-start; }
+        .grid { grid-template-columns: 1fr; }
+        .lead { font-size: 18px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="hero">
+        <div class="hero-card">
+          <div class="topbar">
+            <p class="eyebrow">Офіційний сайт видавця</p>
+            <div class="lang">
+              <a href="index.html" lang="en" hreflang="en">English</a>
+              <span>UA</span>
+            </div>
+          </div>
+          <h1>Сайт видавця для бізнес-верифікації в Google Play</h1>
+          <p class="lead">
+            Цей сайт представляє діяльність ФОП АНДРЕЄВ ОЛЕКСАНДР СЕРГІЙОВИЧ з публікації мобільних застосунків.
+            Він призначений для бізнес-верифікації в Google Play, публічних контактів
+            і подальшої публікації кількох застосунків на одному домені.
+          </p>
+          <div class="actions">
+            <a class="button" href="privacy-ua.html">Політика конфіденційності Book Reader</a>
+            <a class="button-secondary" href="about-ua.html">Про видавця / Контакти</a>
+          </div>
+        </div>
+      </section>
+      <section class="grid">
+        <article class="section-card">
+          <h2>Інформація про видавця</h2>
+          <p>
+            Публічні бізнес-дані для публікації застосунків і верифікації магазину.
+          </p>
+          <ul>
+            <li>Публічне ім'я: Олександр Андреєв</li>
+            <li>Юридична особа: ФОП АНДРЕЄВ ОЛЕКСАНДР СЕРГІЙОВИЧ</li>
+            <li>Країна: Україна</li>
+            <li>Email: andreyev0204@gmail.com</li>
+            <li>Сайт: https://net.ck.ua</li>
+          </ul>
+        </article>
+        <article class="section-card">
+          <h2>Застосунки</h2>
+          <p>
+            Структура сайту розрахована на кілька застосунків. Кожен окремий продукт може мати
+            власну сторінку та власну політику конфіденційності, якщо відрізняються функції
+            або практики обробки даних.
+          </p>
+          <ul>
+            <li>Book Reader: офлайн Android-застосунок для читання книг</li>
+            <li>Майбутній застосунок #2</li>
+            <li>Майбутній застосунок #3</li>
+          </ul>
+        </article>
+      </section>
+      <section class="single">
+        <article class="section-card">
+          <h2>Поточний застосунок: Book Reader</h2>
+          <p>
+            Book Reader це офлайн Android-застосунок для імпорту, організації та читання книг на пристрої.
+            Він підтримує файли TXT, MD, FB2, EPUB, ZIP і FB2.ZIP, а також має бібліотеку,
+            прогрес читання, теми оформлення та закладки.
+          </p>
+          <p>
+            Запланована продакшн-версія не використовує логін, рекламу, аналітику, підписки
+            або хмарну синхронізацію. У поточному проєкті значенням application ID за замовчуванням
+            зараз є <code>com.example.coolreaderclone</code>, і перед релізом його потрібно замінити на фінальне.
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer class="wrap footer">
+      <p>
+        © 2026 Олександр Андреєв. Усі права захищені. |
+        <a href="privacy-ua.html">Політика конфіденційності Book Reader</a> |
+        <a href="about-ua.html">Про видавця / Контакти</a> |
+        <a href="index.html" lang="en" hreflang="en">English version</a>
+      </p>
+    </footer>
+  </body>
+</html>
