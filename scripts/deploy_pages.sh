@@ -31,7 +31,7 @@ if [[ ! -f "$BUILD_DIR/index.html" ]]; then
   exit 1
 fi
 
-git -C "$ROOT_DIR" add docs Gemfile .gitignore scripts/deploy_pages.sh
+git -C "$ROOT_DIR" add docs Gemfile .gitignore scripts/deploy_pages.sh .github/workflows/jekyll.yml
 
 if git -C "$ROOT_DIR" diff --cached --quiet; then
   echo "No staged changes to commit. Local build passed." >&2
@@ -41,5 +41,6 @@ fi
 git -C "$ROOT_DIR" commit -m "$COMMIT_MESSAGE"
 git -C "$ROOT_DIR" push origin "$BRANCH"
 
-echo "Deployed changes from branch $BRANCH"
+echo "Committed and pushed branch $BRANCH"
+echo "GitHub Actions workflow '.github/workflows/jekyll.yml' will deploy Pages"
 echo "Local build output: $BUILD_DIR"
