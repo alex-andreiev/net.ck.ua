@@ -123,32 +123,6 @@ body.page-card {
   box-shadow: 0 0 0 5px rgba(180, 77, 42, 0.1);
 }
 
-.lang {
-  display: inline-flex;
-  gap: 8px;
-  align-items: center;
-}
-
-.lang a,
-.lang span {
-  min-width: 68px;
-  text-align: center;
-  padding: 9px 13px;
-  border-radius: 999px;
-  border: 1px solid var(--line);
-  text-decoration: none;
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--ink);
-  background: rgba(255, 255, 255, 0.46);
-}
-
-.lang span {
-  background: var(--accent-soft);
-  border-color: rgba(180, 77, 42, 0.18);
-  color: var(--accent-deep);
-}
-
 .hero-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.5fr) minmax(280px, 0.9fr);
@@ -213,8 +187,7 @@ h1 {
 }
 
 .button:hover,
-.button-secondary:hover,
-.lang a:hover {
+.button-secondary:hover {
   transform: translateY(-1px);
 }
 
