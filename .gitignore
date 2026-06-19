@@ -1,0 +1,7 @@
+/.site_build/
+/.jekyll-cache/
+/docs/.jekyll-cache/
+/docs/.sass-cache/
+/docs/.jekyll-metadata
+/vendor/
+/.tmp_images/

@@ -1,72 +1,28 @@
-<!doctype html>
-<html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Про видавця / Контакти</title>
-    <style>
-      :root {
-        --bg: #f6f2ea;
-        --surface: #fffdf8;
-        --text: #201a16;
-        --muted: #63584f;
-        --line: rgba(32, 26, 22, 0.12);
-        --accent: #9d4d33;
-      }
-      * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        font-family: Georgia, "Times New Roman", serif;
-        color: var(--text);
-        background: linear-gradient(180deg, #efe5d3 0%, var(--bg) 38%, #f8f4ed 100%);
-      }
-      .wrap { width: min(860px, calc(100% - 32px)); margin: 0 auto; padding: 32px 0 56px; }
-      .card {
-        background: var(--surface);
-        border: 1px solid var(--line);
-        border-radius: 24px;
-        padding: 32px;
-        box-shadow: 0 18px 48px rgba(56, 39, 27, 0.08);
-      }
-      .lang { display: flex; justify-content: flex-end; gap: 8px; margin-bottom: 24px; }
-      .lang a, .lang span {
-        padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(32, 26, 22, 0.12);
-        text-decoration: none; font-size: 14px; color: var(--text); background: rgba(255,255,255,0.45);
-      }
-      .lang span { background: rgba(157, 77, 51, 0.12); }
-      h1, h2 { margin: 0 0 16px; }
-      p, li { line-height: 1.7; color: var(--muted); }
-      ul { padding-left: 18px; }
-      a { color: var(--accent); }
-    </style>
-  </head>
-  <body>
-    <main class="wrap">
-      <article class="card">
-        <div class="lang">
-          <a href="about.html" lang="en" hreflang="en">English</a>
-          <span>UA</span>
-        </div>
-        <h1>Про видавця / Контакти</h1>
-        <p>
-          Цей сайт представляє діяльність Олександра Андреєва з публікації мобільних застосунків.
-        </p>
-        <h2>Видавець</h2>
-        <ul>
-          <li>Публічне ім'я: Олександр Андреєв</li>
-          <li>Юридична особа: ФОП АНДРЕЄВ ОЛЕКСАНДР СЕРГІЙОВИЧ</li>
-          <li>Країна: Україна</li>
-          <li>Email: <a href="mailto:andreyev0204@gmail.com">andreyev0204@gmail.com</a></li>
-          <li>Домен: <a href="https://net.ck.ua">net.ck.ua</a></li>
-        </ul>
-        <h2>Підтримка</h2>
-        <p>
-          Для запитань щодо застосунків, публікації або конфіденційності використовуйте email вище.
-        </p>
-        <p>
-          Повернутися на <a href="ua.html">головну сторінку</a>.
-        </p>
-      </article>
-    </main>
-  </body>
-</html>
+---
+layout: default
+title: Про видавця / Контакти
+lang: uk
+body_class: page-card
+---
+<main class="page-wrap">
+  <article class="card">
+    <div class="lang">
+      <a href="about.html" lang="en" hreflang="en">English</a>
+      <span>UA</span>
+    </div>
+    <p class="page-tag">Контакти видавця</p>
+    <h1>Про видавця / Контакти</h1>
+    <p class="page-intro">Цей сайт представляє діяльність Олександра Андреєва з публікації мобільних застосунків.</p>
+    <h2>Видавець</h2>
+    <ul class="feature-list">
+      <li>Публічне ім'я: Олександр Андреєв</li>
+      <li>Юридична особа: ФОП АНДРЕЄВ ОЛЕКСАНДР СЕРГІЙОВИЧ</li>
+      <li>Країна: Україна</li>
+      <li>Email: <a href="mailto:andreyev0204@gmail.com">andreyev0204@gmail.com</a></li>
+      <li>Домен: <a href="https://net.ck.ua">net.ck.ua</a></li>
+    </ul>
+    <h2>Підтримка</h2>
+    <p>Для запитань щодо застосунків, публікації або конфіденційності використовуйте email вище.</p>
+    <p>Повернутися на <a href="ua.html">головну сторінку</a>.</p>
+  </article>
+</main>

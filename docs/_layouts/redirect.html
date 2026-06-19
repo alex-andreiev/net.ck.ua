@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="{{ page.lang | default: 'en' }}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0; url={{ page.redirect_to }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page.title | default: 'Redirecting...' }}</title>
+    <link rel="canonical" href="{{ page.redirect_to }}" />
+    <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}" />
+  </head>
+  <body class="redirect-page">
+    <article class="redirect-card">
+      <p>{{ page.redirect_text_prefix | default: 'Redirecting to' }} <a href="{{ page.redirect_to }}">{{ page.redirect_text_label }}</a>...</p>
+    </article>
+  </body>
+</html>
