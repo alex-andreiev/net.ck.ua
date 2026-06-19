@@ -7,19 +7,13 @@
     {% if page.description %}
     <meta name="description" content="{{ page.description }}" />
     {% endif %}
-    <meta name="theme-color" content="#f3ecde" />
+    <meta name="theme-color" content="#f4f6fb" />
     <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}" />
   </head>
   <body class="{{ page.body_class | default: 'page-card' }}">
     <header class="site-header">
-      <div class="wrap site-header-inner">
-        <a class="brand" href="index.html">
-          <span class="brand-mark">OA</span>
-          <span class="brand-text">
-            <strong>Oleksandr Andreiev</strong>
-            <small>Publisher Website</small>
-          </span>
-        </a>
+      <div class="container site-header-inner">
+        <a class="brand" href="index.html">Oleksandr Andreiev</a>
         <nav class="site-nav" aria-label="Primary">
           <a href="index.html"{% if page.nav == 'home' %} aria-current="page"{% endif %}>Home</a>
           <a href="about.html"{% if page.nav == 'about' %} aria-current="page"{% endif %}>About</a>
